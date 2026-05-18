@@ -2,7 +2,7 @@
   <img src="banner.png" alt="Caio Gadotti — Industrial Automation Developer" width="100%"/>
 </div>
 
-# Caio César Linguitte Gadotti
+# Caio G
 
 **Systems Developer | Industrial Automation & Process Optimization**
 
