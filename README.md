@@ -60,3 +60,4 @@ Scripts and tools for automating repetitive CAD tasks — dynamic layout generat
 
 - **LinkedIn:** [linkedin.com/in/caiogadotti](https://linkedin.com/in/caiogadotti)
 - **Email:** available on LinkedIn
+
