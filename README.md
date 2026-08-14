@@ -22,6 +22,7 @@ Currently working at Descartee, where I design and maintain internal systems for
 - Python, VBA
 - Streamlit, HTML
 - SQL (PostgreSQL via Supabase)
+- scikit-learn, NumPy, SciPy
 
 **Tools & Integrations**
 - Supabase (cloud database, authentication, storage)
@@ -40,6 +41,11 @@ Currently working at Descartee, where I design and maintain internal systems for
 
 ## Featured Projects
 
+**[Handwritten Digit Recognizer](https://github.com/caiogadotti/reconhecimento-digitos-knn)** &nbsp;·&nbsp; `public`
+Machine learning classifier that reads handwritten digits from 8×8 images, with a Streamlit interface to draw a number and see the prediction, the confidence across classes, and the training examples that produced the answer. Reaches **93.4%** on 2,000 digits written by other people and never seen during training.
+
+The interesting part was the diagnosis: training only on the classic `digits` dataset gave 98% on its own test set but 62.5% on handwriting from another source. No model swap or hyperparameter search closed that gap — adding writing diversity to the training data did, worth +29 points. Built with scikit-learn, NumPy and SciPy.
+
 **Industrial Cut Optimization System**
 Optimization tool for TNT roll cutting operations. Calculates cut sequences to minimize waste, tracks operator performance in real time, and sends automated alerts via Telegram. Built with Python and Streamlit.
 
@@ -52,7 +58,8 @@ Web application for managing employee onboarding. Handles document upload, form 
 **AutoCAD Process Automation**
 Scripts and tools for automating repetitive CAD tasks — dynamic layout generation, automated title block population, and batch drawing exports. Developed for infrastructure and industrial environments.
 
-> Repositories for these projects are private. More public projects coming soon.
+> The digit recognizer is open source. The remaining projects run on internal company
+> systems, so their repositories are private.
 
 ---
 
