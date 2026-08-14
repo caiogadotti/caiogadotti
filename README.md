@@ -56,28 +56,33 @@ Currently working at Descartee, where I design and maintain internal systems for
 
 ## Featured Projects
 
-**[Handwritten Digit Recognizer](https://github.com/caiogadotti/reconhecimento-digitos-knn)** &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://reconhecimento-digitos-knn.streamlit.app/)
+**Industrial Cut Optimization System** &nbsp;·&nbsp; `process optimization`
+Optimization tool for TNT roll cutting operations. Calculates cut sequences to minimize waste, tracks operator performance in real time, and sends automated alerts via Telegram. Built with Python and Streamlit.
+
+**Automated Label Printing** &nbsp;·&nbsp; `hardware integration`
+Application for automated label generation and printing with direct integration to Zebra thermal printers. Eliminates manual label creation and reduces errors in labeling workflows.
+
+**HR Admission Portal** &nbsp;·&nbsp; `internal tooling`
+Web application for managing employee onboarding. Handles document upload, form validation, and data persistence with role-based access. Built with Streamlit and Supabase.
+
+**AutoCAD Process Automation** &nbsp;·&nbsp; `cad automation`
+Scripts and tools for automating repetitive CAD tasks: dynamic layout generation, automated title block population, and batch drawing exports. Developed for infrastructure and industrial environments.
+
+> These run on internal company systems, so their repositories are private.
+
+---
+
+## Featured Projects &nbsp;·&nbsp; Graduation
+
+Coursework from my Machine Learning Lab (LCML), published as open source.
+
+**[Handwritten Digit Recognizer](https://github.com/caiogadotti/reconhecimento-digitos-knn)** &nbsp;·&nbsp; `machine learning` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://reconhecimento-digitos-knn.streamlit.app/)
 Machine learning classifier that reads handwritten digits from 8×8 images, with a Streamlit interface to draw a number and see the prediction, the confidence across classes, and the training examples that produced the answer. Reaches **93.4%** on 2,000 digits written by other people and never seen during training.
 
 The interesting part was the diagnosis: training only on the classic `digits` dataset gave 98% on its own test set but 62.5% on handwriting from another source. No model swap or hyperparameter search closed that gap. Adding writing diversity to the training data did, worth +29 points. Built with scikit-learn, NumPy and SciPy.
 
-**[Color-Based Position Detector](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://deteccao-cor.streamlit.app/)
+**[Color-Based Position Detector](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `computer vision` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://deteccao-cor.streamlit.app/)
 Computer vision pipeline that locates a colored object in an image and classifies its position (left, center, right) using classic OpenCV, no machine learning. Converts to HSV, thresholds the target color, finds the largest contour and its centroid, then compares it against the frame's midpoint with a tolerance band. Streamlit interface with live browser camera capture, manual HSV calibration sliders, and a synthetic fallback image for testing without a webcam.
-
-**Industrial Cut Optimization System**
-Optimization tool for TNT roll cutting operations. Calculates cut sequences to minimize waste, tracks operator performance in real time, and sends automated alerts via Telegram. Built with Python and Streamlit.
-
-**Automated Label Printing**
-Application for automated label generation and printing with direct integration to Zebra thermal printers. Eliminates manual label creation and reduces errors in labeling workflows.
-
-**HR Admission Portal**
-Web application for managing employee onboarding. Handles document upload, form validation, and data persistence with role-based access. Built with Streamlit and Supabase.
-
-**AutoCAD Process Automation**
-Scripts and tools for automating repetitive CAD tasks: dynamic layout generation, automated title block population, and batch drawing exports. Developed for infrastructure and industrial environments.
-
-> The digit recognizer is open source. The remaining projects run on internal company
-> systems, so their repositories are private.
 
 ---
 

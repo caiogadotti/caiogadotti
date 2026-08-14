@@ -56,28 +56,33 @@ Atualmente na Descartee, onde projeto e mantenho sistemas internos de controle o
 
 ## Projetos em Destaque
 
-**[Reconhecedor de Dígitos Manuscritos](https://github.com/caiogadotti/reconhecimento-digitos-knn)** &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://reconhecimento-digitos-knn.streamlit.app/)
+**Sistema de Otimização de Corte Industrial** &nbsp;·&nbsp; `otimização de processos`
+Ferramenta de otimização para operações de corte de bobinas de TNT. Calcula sequências de corte para minimizar desperdício, acompanha o desempenho dos operadores em tempo real e envia alertas automáticos via Telegram. Feito com Python e Streamlit.
+
+**Impressão Automatizada de Etiquetas** &nbsp;·&nbsp; `integração de hardware`
+Aplicação para geração e impressão automatizada de etiquetas com integração direta a impressoras térmicas Zebra. Elimina a criação manual de etiquetas e reduz erros no fluxo de etiquetagem.
+
+**Portal de Admissão de RH** &nbsp;·&nbsp; `ferramenta interna`
+Aplicação web para gestão de admissão de funcionários. Trata envio de documentos, validação de formulários e persistência de dados com controle de acesso por perfil. Feito com Streamlit e Supabase.
+
+**Automação de Processos no AutoCAD** &nbsp;·&nbsp; `automação de cad`
+Scripts e ferramentas para automatizar tarefas repetitivas de CAD: geração dinâmica de layout, preenchimento automático de carimbos e exportação de desenhos em lote. Desenvolvido para ambientes industriais e de infraestrutura.
+
+> Rodam em sistemas internos da empresa, por isso seus repositórios são privados.
+
+---
+
+## Projetos em Destaque &nbsp;·&nbsp; Graduação
+
+Trabalhos do meu Laboratório de Aprendizado de Máquina (LCML), publicados como open source.
+
+**[Reconhecedor de Dígitos Manuscritos](https://github.com/caiogadotti/reconhecimento-digitos-knn)** &nbsp;·&nbsp; `aprendizado de máquina` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://reconhecimento-digitos-knn.streamlit.app/)
 Classificador de aprendizado de máquina que lê dígitos manuscritos a partir de imagens 8×8, com interface Streamlit para desenhar um número e ver a previsão, a confiança entre as classes e os exemplos de treino que produziram a resposta. Alcança **93,4%** em 2.000 dígitos escritos por outras pessoas e nunca vistos durante o treino.
 
 A parte interessante foi o diagnóstico: treinar apenas com o dataset clássico `digits` dava 98% no próprio conjunto de teste, mas 62,5% em caligrafia de outra origem. Nenhuma troca de modelo ou busca de hiperparâmetro fechou essa lacuna. Quem fechou foi acrescentar diversidade de escrita aos dados de treino, valendo +29 pontos. Feito com scikit-learn, NumPy e SciPy.
 
-**[Detector de Posição por Cor](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://deteccao-cor.streamlit.app/)
+**[Detector de Posição por Cor](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `visão computacional` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://deteccao-cor.streamlit.app/)
 Pipeline de visão computacional que localiza um objeto colorido numa imagem e classifica sua posição (esquerda, centro, direita) usando OpenCV clássico, sem aprendizado de máquina. Converte para HSV, isola a cor-alvo, encontra o maior contorno e seu centroide, e compara com o meio da imagem usando uma margem de tolerância. Interface Streamlit com captura de câmera pelo navegador, calibração manual de HSV por sliders e uma imagem sintética de fallback para testar sem webcam.
-
-**Sistema de Otimização de Corte Industrial**
-Ferramenta de otimização para operações de corte de bobinas de TNT. Calcula sequências de corte para minimizar desperdício, acompanha o desempenho dos operadores em tempo real e envia alertas automáticos via Telegram. Feito com Python e Streamlit.
-
-**Impressão Automatizada de Etiquetas**
-Aplicação para geração e impressão automatizada de etiquetas com integração direta a impressoras térmicas Zebra. Elimina a criação manual de etiquetas e reduz erros no fluxo de etiquetagem.
-
-**Portal de Admissão de RH**
-Aplicação web para gestão de admissão de funcionários. Trata envio de documentos, validação de formulários e persistência de dados com controle de acesso por perfil. Feito com Streamlit e Supabase.
-
-**Automação de Processos no AutoCAD**
-Scripts e ferramentas para automatizar tarefas repetitivas de CAD: geração dinâmica de layout, preenchimento automático de carimbos e exportação de desenhos em lote. Desenvolvido para ambientes industriais e de infraestrutura.
-
-> O reconhecedor de dígitos é open source. Os demais projetos rodam em sistemas
-> internos da empresa, por isso seus repositórios são privados.
 
 ---
 
