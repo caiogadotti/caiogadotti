@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="banner.png" alt="Caio Gadotti, Industrial Automation Developer" width="100%"/>
+  <img src="banner.jpg" alt="Caio Gadotti, Industrial Automation Developer" width="100%"/>
 </div>
 
 # Caio G
