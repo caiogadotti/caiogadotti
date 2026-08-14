@@ -6,6 +6,8 @@
 
 **Systems Developer | Industrial Automation & Process Optimization**
 
+**English** &nbsp;·&nbsp; [Português](README.pt-BR.md)
+
 ---
 
 ## About
