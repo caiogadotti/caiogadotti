@@ -23,7 +23,7 @@ Currently working at Descartee, where I design and maintain internal systems for
 **Languages & Frameworks**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![VBA](https://img.shields.io/badge/VBA-867DB1?logo=visualbasic&logoColor=white)
+![VBA](https://img.shields.io/badge/VBA-867DB1)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
@@ -42,7 +42,7 @@ Currently working at Descartee, where I design and maintain internal systems for
 ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?logo=googlesheets&logoColor=white)
 ![Zebra ZPL](https://img.shields.io/badge/Zebra%20ZPL-000000?logo=zebratechnologies&logoColor=white)
 ![AutoCAD](https://img.shields.io/badge/AutoCAD-0696D7?logo=autodesk&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-217346?logo=microsoftexcel&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
 **Domains**
