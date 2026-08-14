@@ -23,6 +23,7 @@ Currently working at Descartee, where I design and maintain internal systems for
 **Languages & Frameworks**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)
 ![VBA](https://img.shields.io/badge/VBA-867DB1)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
@@ -92,6 +93,9 @@ The interesting part was the diagnosis: training only on the classic `digits` da
 
 **[Color-Based Position Detector](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `computer vision` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://deteccao-cor.streamlit.app/)
 Computer vision pipeline that locates a colored object in an image and classifies its position (left, center, right) using classic OpenCV, no machine learning. Converts to HSV, thresholds the target color, finds the largest contour and its centroid, then compares it against the frame's midpoint with a tolerance band. Streamlit interface with live browser camera capture, manual HSV calibration sliders, and a synthetic fallback image for testing without a webcam.
+
+**[Predictive Catenary Monitoring](https://github.com/caiogadotti/monitoramento-catenaria)** &nbsp;·&nbsp; `go` &nbsp;·&nbsp; `python` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; `under development`
+Concurrent ingestion gateway in Go for telemetry from thousands of simulated sensor points, feeding a Python engine that combines vibration analysis with a simplified structural fatigue model. Domain grounded in 6 months at Systra doing technical drawings and control schematics for catenary systems on the São Paulo Intercity Train (TIC). Go handles the concurrency problem (thousands of simultaneous sensor connections), Python handles the math.
 
 ---
 

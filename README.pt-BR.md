@@ -23,6 +23,7 @@ Atualmente na Descartee, onde projeto e mantenho sistemas internos de controle o
 **Linguagens e Frameworks**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)
 ![VBA](https://img.shields.io/badge/VBA-867DB1)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
@@ -92,6 +93,9 @@ A parte interessante foi o diagnóstico: treinar apenas com o dataset clássico 
 
 **[Detector de Posição por Cor](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `visão computacional` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://deteccao-cor.streamlit.app/)
 Pipeline de visão computacional que localiza um objeto colorido numa imagem e classifica sua posição (esquerda, centro, direita) usando OpenCV clássico, sem aprendizado de máquina. Converte para HSV, isola a cor-alvo, encontra o maior contorno e seu centroide, e compara com o meio da imagem usando uma margem de tolerância. Interface Streamlit com captura de câmera pelo navegador, calibração manual de HSV por sliders e uma imagem sintética de fallback para testar sem webcam.
+
+**[Monitoramento Preditivo de Catenária](https://github.com/caiogadotti/monitoramento-catenaria)** &nbsp;·&nbsp; `go` &nbsp;·&nbsp; `python` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; `em desenvolvimento`
+Gateway de ingestão concorrente em Go recebendo telemetria de milhares de pontos de sensor simulados, alimentando um motor em Python que cruza análise de vibração com um modelo simplificado de fadiga estrutural. Domínio baseado em 6 meses na Systra fazendo desenhos técnicos e esquemas de controle de sistemas de catenária no Trem Intercidades de São Paulo (TIC). Go resolve o problema de concorrência (milhares de conexões de sensor simultâneas), Python resolve a matemática.
 
 ---
 
