@@ -54,6 +54,15 @@ Currently working at Descartee, where I design and maintain internal systems for
 
 ---
 
+## GitHub Stats
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=caiogadotti&show_icons=true&bg_color=0a0a0b&title_color=f5a524&text_color=f4f4f5&icon_color=f5a524&border_color=292930&border_radius=10" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=caiogadotti&layout=compact&bg_color=0a0a0b&title_color=f5a524&text_color=f4f4f5&border_color=292930&border_radius=10" alt="Most used languages" />
+</p>
+
+---
+
 ## Featured Projects
 
 **Industrial Cut Optimization System** &nbsp;·&nbsp; `process optimization`
