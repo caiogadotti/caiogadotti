@@ -57,7 +57,7 @@ Currently working at Descartee, where I design and maintain internal systems for
 ## GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=caiogadotti&show_icons=true&hide_rank=true&hide_border=true&bg_color=0a0a0b&title_color=f4f4f5&text_color=8b8b96&icon_color=f5a524" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=caiogadotti&show_icons=true&hide_rank=true&hide_border=true&bg_color=0a0a0b&title_color=f4f4f5&text_color=8b8b96&icon_color=8b8b96" alt="GitHub stats" />
   <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=caiogadotti&layout=compact&hide_border=true&bg_color=0a0a0b&title_color=f4f4f5&text_color=8b8b96" alt="Most used languages" />
 </p>
 
