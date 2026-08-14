@@ -60,6 +60,9 @@ Machine learning classifier that reads handwritten digits from 8×8 images, with
 
 The interesting part was the diagnosis: training only on the classic `digits` dataset gave 98% on its own test set but 62.5% on handwriting from another source. No model swap or hyperparameter search closed that gap. Adding writing diversity to the training data did, worth +29 points. Built with scikit-learn, NumPy and SciPy.
 
+**[Color-Based Position Detector](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `public`
+Computer vision pipeline that locates a colored object in an image and classifies its position (left, center, right) using classic OpenCV, no machine learning. Converts to HSV, thresholds the target color, finds the largest contour and its centroid, then compares it against the frame's midpoint with a tolerance band. Streamlit interface with live browser camera capture, manual HSV calibration sliders, and a synthetic fallback image for testing without a webcam.
+
 **Industrial Cut Optimization System**
 Optimization tool for TNT roll cutting operations. Calculates cut sequences to minimize waste, tracks operator performance in real time, and sends automated alerts via Telegram. Built with Python and Streamlit.
 

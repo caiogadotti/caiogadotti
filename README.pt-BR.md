@@ -60,6 +60,9 @@ Classificador de aprendizado de máquina que lê dígitos manuscritos a partir d
 
 A parte interessante foi o diagnóstico: treinar apenas com o dataset clássico `digits` dava 98% no próprio conjunto de teste, mas 62,5% em caligrafia de outra origem. Nenhuma troca de modelo ou busca de hiperparâmetro fechou essa lacuna. Quem fechou foi acrescentar diversidade de escrita aos dados de treino, valendo +29 pontos. Feito com scikit-learn, NumPy e SciPy.
 
+**[Detector de Posição por Cor](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `público`
+Pipeline de visão computacional que localiza um objeto colorido numa imagem e classifica sua posição (esquerda, centro, direita) usando OpenCV clássico, sem aprendizado de máquina. Converte para HSV, isola a cor-alvo, encontra o maior contorno e seu centroide, e compara com o meio da imagem usando uma margem de tolerância. Interface Streamlit com captura de câmera pelo navegador, calibração manual de HSV por sliders e uma imagem sintética de fallback para testar sem webcam.
+
 **Sistema de Otimização de Corte Industrial**
 Ferramenta de otimização para operações de corte de bobinas de TNT. Calcula sequências de corte para minimizar desperdício, acompanha o desempenho dos operadores em tempo real e envia alertas automáticos via Telegram. Feito com Python e Streamlit.
 
