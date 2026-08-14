@@ -34,6 +34,7 @@ Currently working at Descartee, where I design and maintain internal systems for
 ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
 ![Pillow](https://img.shields.io/badge/Pillow-4B8BBE?logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
 
 **Tools & Integrations**
 
