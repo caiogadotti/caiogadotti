@@ -34,6 +34,8 @@ Atualmente na Descartee, onde projeto e mantenho sistemas internos de controle o
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)
 ![Pillow](https://img.shields.io/badge/Pillow-4B8BBE?logo=python&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
 
@@ -94,8 +96,10 @@ A parte interessante foi o diagnóstico: treinar apenas com o dataset clássico 
 **[Detector de Posição por Cor](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `visão computacional` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://deteccao-cor.streamlit.app/)
 Pipeline de visão computacional que localiza um objeto colorido numa imagem e classifica sua posição (esquerda, centro, direita) usando OpenCV clássico, sem aprendizado de máquina. Converte para HSV, isola a cor-alvo, encontra o maior contorno e seu centroide, e compara com o meio da imagem usando uma margem de tolerância. Interface Streamlit com captura de câmera pelo navegador, calibração manual de HSV por sliders e uma imagem sintética de fallback para testar sem webcam.
 
-**[Monitoramento Preditivo de Catenária](https://github.com/caiogadotti/monitoramento-catenaria)** &nbsp;·&nbsp; `go` &nbsp;·&nbsp; `python` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; `em desenvolvimento`
-Gateway de ingestão concorrente em Go recebendo telemetria de milhares de pontos de sensor simulados, alimentando um motor em Python que cruza análise de vibração com um modelo simplificado de fadiga estrutural. Domínio baseado em 6 meses na Systra fazendo desenhos técnicos e esquemas de controle de sistemas de catenária no Trem Intercidades de São Paulo (TIC). Go resolve o problema de concorrência (milhares de conexões de sensor simultâneas), Python resolve a matemática.
+**[Monitoramento Preditivo de Catenária](https://github.com/caiogadotti/monitoramento-catenaria)** &nbsp;·&nbsp; `sistemas distribuídos` &nbsp;·&nbsp; `go` &nbsp;·&nbsp; `python` &nbsp;·&nbsp; `público`
+Pipeline completo de manutenção preditiva para catenária ferroviária: gateway de ingestão concorrente em Go recebendo telemetria de milhares de sensores simulados, motor de análise em Python que estima dano por fadiga estrutural, persistência em Supabase e dashboard Streamlit. Domínio baseado em 6 meses na Systra fazendo desenhos técnicos e esquemas de controle de sistemas de catenária no Trem Intercidades de São Paulo (TIC). O gateway foi medido sob carga real, não estimado: **2.000 sensores simultâneos, zero falhas de conexão**, com uma ferramenta de teste de carga escrita para o projeto.
+
+O motor estima o desgaste de duas formas independentes, contagem de ciclos pelas regras de Basquin e Palmgren-Miner, e análise espectral por FFT do sinal de vibração, ambas chegando a **0,002 de erro absoluto médio** contra o dano real. A parte interessante foi um erro de modelagem que só apareceu no pipeline completo: o estimador espectral ajustava uma reta entre potência e dano, quando potência é o quadrado de uma amplitude. Funcionava na faixa estreita da calibração e errava por 60x fora dela. Trocar a forma linear pela quadrática correta derrubou o erro de 0,13 para 0,002. Feito com Go, NumPy, Supabase e Streamlit.
 
 ---
 

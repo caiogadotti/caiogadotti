@@ -34,6 +34,8 @@ Currently working at Descartee, where I design and maintain internal systems for
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)
 ![Pillow](https://img.shields.io/badge/Pillow-4B8BBE?logo=python&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
 
@@ -94,8 +96,10 @@ The interesting part was the diagnosis: training only on the classic `digits` da
 **[Color-Based Position Detector](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `computer vision` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://deteccao-cor.streamlit.app/)
 Computer vision pipeline that locates a colored object in an image and classifies its position (left, center, right) using classic OpenCV, no machine learning. Converts to HSV, thresholds the target color, finds the largest contour and its centroid, then compares it against the frame's midpoint with a tolerance band. Streamlit interface with live browser camera capture, manual HSV calibration sliders, and a synthetic fallback image for testing without a webcam.
 
-**[Predictive Catenary Monitoring](https://github.com/caiogadotti/monitoramento-catenaria)** &nbsp;·&nbsp; `go` &nbsp;·&nbsp; `python` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; `under development`
-Concurrent ingestion gateway in Go for telemetry from thousands of simulated sensor points, feeding a Python engine that combines vibration analysis with a simplified structural fatigue model. Domain grounded in 6 months at Systra doing technical drawings and control schematics for catenary systems on the São Paulo Intercity Train (TIC). Go handles the concurrency problem (thousands of simultaneous sensor connections), Python handles the math.
+**[Predictive Catenary Monitoring](https://github.com/caiogadotti/monitoramento-catenaria)** &nbsp;·&nbsp; `distributed systems` &nbsp;·&nbsp; `go` &nbsp;·&nbsp; `python` &nbsp;·&nbsp; `public`
+End to end predictive maintenance pipeline for railway catenary: a concurrent ingestion gateway in Go receiving telemetry from thousands of simulated sensors, a Python analysis engine estimating structural fatigue damage, Supabase persistence and a Streamlit dashboard. Domain grounded in 6 months at Systra doing technical drawings and control schematics for catenary systems on the São Paulo Intercity Train (TIC). The gateway was measured under real load, not estimated: **2,000 concurrent sensors, zero connection failures**, using a load testing tool written for the project.
+
+The engine estimates wear two independent ways, cycle counting via the Basquin and Palmgren-Miner rules, and spectral analysis via FFT of the vibration signal, both landing at **0.002 mean absolute error** against ground truth. The interesting part was a modeling bug that only surfaced in the full pipeline: the spectral estimator fit a straight line between power and damage, when power is the square of an amplitude. It worked inside the narrow calibration range and was off by 60x outside it. Replacing the linear form with the correct quadratic one dropped the error from 0.13 to 0.002. Built with Go, NumPy, Supabase and Streamlit.
 
 ---
 
