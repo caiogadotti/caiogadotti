@@ -1,26 +1,26 @@
 <div align="center">
-  <img src="banner.jpg" alt="Caio Gadotti, Industrial Automation Developer" width="100%"/>
+  <img src="banner.jpg" alt="Caio Gadotti, Desenvolvedor de Automação Industrial" width="100%"/>
 </div>
 
 # Caio G
 
-**Systems Developer | Industrial Automation & Process Optimization**
+**Desenvolvedor de Sistemas | Automação Industrial e Otimização de Processos**
 
-**English** &nbsp;·&nbsp; [Português](README.pt-BR.md)
-
----
-
-## About
-
-I develop integrated systems focused on industrial automation, operational control, and process optimization. My work sits at the intersection of software development and physical operations, building tools that replace manual routines, reduce errors, and give teams real-time visibility over production.
-
-Currently working at Descartee, where I design and maintain internal systems for operational control and workflow automation. Previously at Systra, where I worked on infrastructure projects for the São Paulo Intercity Train (TIC), producing technical drawings and control schematics for catenary systems using AutoCAD.
+**Português** &nbsp;·&nbsp; [English](README.en.md)
 
 ---
 
-## Skills
+## Sobre
 
-**Languages & Frameworks**
+Desenvolvo sistemas integrados voltados a automação industrial, controle operacional e otimização de processos. Meu trabalho fica na fronteira entre desenvolvimento de software e operação física, construindo ferramentas que substituem rotinas manuais, reduzem erros e dão às equipes visibilidade em tempo real sobre a produção.
+
+Atualmente na Descartee, onde projeto e mantenho sistemas internos de controle operacional e automação de fluxos de trabalho. Anteriormente na Systra, em projetos de infraestrutura para o Trem Intercidades de São Paulo (TIC), produzindo desenhos técnicos e esquemas de controle para sistemas de catenária em AutoCAD.
+
+---
+
+## Competências
+
+**Linguagens e Frameworks**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)
@@ -29,7 +29,7 @@ Currently working at Descartee, where I design and maintain internal systems for
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 
-**Data & Machine Learning**
+**Dados e Aprendizado de Máquina**
 
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
@@ -39,7 +39,7 @@ Currently working at Descartee, where I design and maintain internal systems for
 ![Pillow](https://img.shields.io/badge/Pillow-4B8BBE?logo=python&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
 
-**Tools & Integrations**
+**Ferramentas e Integrações**
 
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
@@ -49,62 +49,61 @@ Currently working at Descartee, where I design and maintain internal systems for
 ![Excel](https://img.shields.io/badge/Excel-217346)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
-**Domains**
-- Industrial process control
-- Hardware-software integration
-- Database modeling
-- Internal tooling and dashboards
+**Domínios**
+- Controle de processos industriais
+- Integração hardware-software
+- Modelagem de banco de dados
+- Ferramentas internas e dashboards
 
 ---
 
-## GitHub Stats
+## Estatísticas do GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=caiogadotti&show_icons=true&hide_rank=true&hide_border=true&bg_color=0a0a0b&title_color=f4f4f5&text_color=8b8b96&icon_color=8b8b96" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=caiogadotti&layout=compact&hide_border=true&bg_color=0a0a0b&title_color=f4f4f5&text_color=8b8b96" alt="Most used languages" />
+  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=caiogadotti&show_icons=true&hide_rank=true&hide_border=true&bg_color=0a0a0b&title_color=f4f4f5&text_color=8b8b96&icon_color=8b8b96" alt="Estatísticas do GitHub" />
+  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=caiogadotti&layout=compact&hide_border=true&bg_color=0a0a0b&title_color=f4f4f5&text_color=8b8b96" alt="Linguagens mais usadas" />
 </p>
 
 ---
 
-## Featured Projects
+## Projetos em Destaque
 
-**Industrial Cut Optimization System** &nbsp;·&nbsp; `process optimization`
-Optimization tool for TNT roll cutting operations. Calculates cut sequences to minimize waste, tracks operator performance in real time, and sends automated alerts via Telegram. Built with Python and Streamlit.
+**Sistema de Otimização de Corte Industrial** &nbsp;·&nbsp; `otimização de processos`
+Ferramenta de otimização para operações de corte de bobinas de TNT. Calcula sequências de corte para minimizar desperdício, acompanha o desempenho dos operadores em tempo real e envia alertas automáticos via Telegram. Feito com Python e Streamlit.
 
-**Automated Label Printing** &nbsp;·&nbsp; `hardware integration`
-Application for automated label generation and printing with direct integration to Zebra thermal printers. Eliminates manual label creation and reduces errors in labeling workflows.
+**Impressão Automatizada de Etiquetas** &nbsp;·&nbsp; `integração de hardware`
+Aplicação para geração e impressão automatizada de etiquetas com integração direta a impressoras térmicas Zebra. Elimina a criação manual de etiquetas e reduz erros no fluxo de etiquetagem.
 
-**HR Admission Portal** &nbsp;·&nbsp; `internal tooling`
-Web application for managing employee onboarding. Handles document upload, form validation, and data persistence with role-based access. Built with Streamlit and Supabase.
+**Portal de Admissão de RH** &nbsp;·&nbsp; `ferramenta interna`
+Aplicação web para gestão de admissão de funcionários. Trata envio de documentos, validação de formulários e persistência de dados com controle de acesso por perfil. Feito com Streamlit e Supabase.
 
-**AutoCAD Process Automation** &nbsp;·&nbsp; `cad automation`
-Scripts and tools for automating repetitive CAD tasks: dynamic layout generation, automated title block population, and batch drawing exports. Developed for infrastructure and industrial environments.
+**Automação de Processos no AutoCAD** &nbsp;·&nbsp; `automação de cad`
+Scripts e ferramentas para automatizar tarefas repetitivas de CAD: geração dinâmica de layout, preenchimento automático de carimbos e exportação de desenhos em lote. Desenvolvido para ambientes industriais e de infraestrutura.
 
-> These run on internal company systems, so their repositories are private.
-
----
-
-## Featured Projects &nbsp;·&nbsp; Graduation
-
-Coursework from my Machine Learning Lab (LCML), published as open source.
-
-**[Handwritten Digit Recognizer](https://github.com/caiogadotti/reconhecimento-digitos-knn)** &nbsp;·&nbsp; `machine learning` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://reconhecimento-digitos-knn.streamlit.app/)
-Machine learning classifier that reads handwritten digits from 8×8 images, with a Streamlit interface to draw a number and see the prediction, the confidence across classes, and the training examples that produced the answer. Reaches **93.4%** on 2,000 digits written by other people and never seen during training.
-
-The interesting part was the diagnosis: training only on the classic `digits` dataset gave 98% on its own test set but 62.5% on handwriting from another source. No model swap or hyperparameter search closed that gap. Adding writing diversity to the training data did, worth +29 points. Built with scikit-learn, NumPy and SciPy.
-
-**[Color-Based Position Detector](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `computer vision` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://deteccao-cor.streamlit.app/)
-Computer vision pipeline that locates a colored object in an image and classifies its position (left, center, right) using classic OpenCV, no machine learning. Converts to HSV, thresholds the target color, finds the largest contour and its centroid, then compares it against the frame's midpoint with a tolerance band. Streamlit interface with live browser camera capture, manual HSV calibration sliders, and a synthetic fallback image for testing without a webcam.
-
-**[Predictive Catenary Monitoring](https://github.com/caiogadotti/monitoramento-catenaria)** &nbsp;·&nbsp; `distributed systems` &nbsp;·&nbsp; `go` &nbsp;·&nbsp; `python` &nbsp;·&nbsp; `public`
-End to end predictive maintenance pipeline for railway catenary: a concurrent ingestion gateway in Go receiving telemetry from thousands of simulated sensors, a Python analysis engine estimating structural fatigue damage, Supabase persistence and a Streamlit dashboard. Domain grounded in 6 months at Systra doing technical drawings and control schematics for catenary systems on the São Paulo Intercity Train (TIC). The gateway was measured under real load, not estimated: **2,000 concurrent sensors, zero connection failures**, using a load testing tool written for the project.
-
-The engine estimates wear two independent ways, cycle counting via the Basquin and Palmgren-Miner rules, and spectral analysis via FFT of the vibration signal. The interesting part was finding that their mean error, nearly tied at 0.002, was hiding the one case that mattered: a sensor with **0.652** real damage, one step from the critical threshold, was classified normal and fired no alert. Cycle counting is blind to accelerated wear by construction, since two points under the same load with the same number of passages produce the same count even when degrading at different rates. The spectral estimator got that case right (0.609), and the fix was to take the state from the larger of the two and turn their divergence into an accelerated wear signal. Validated across 150 sensors: it flags exactly the 2% defective ones, with no false positives. Built with Go, NumPy, Supabase and Streamlit.
+> Rodam em sistemas internos da empresa, por isso seus repositórios são privados.
 
 ---
 
-## Contact
+## Projetos em Destaque &nbsp;·&nbsp; Graduação
+
+Trabalhos do meu Laboratório de Aprendizado de Máquina (LCML), publicados como open source.
+
+**[Reconhecedor de Dígitos Manuscritos](https://github.com/caiogadotti/reconhecimento-digitos-knn)** &nbsp;·&nbsp; `aprendizado de máquina` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://reconhecimento-digitos-knn.streamlit.app/)
+Classificador de aprendizado de máquina que lê dígitos manuscritos a partir de imagens 8×8, com interface Streamlit para desenhar um número e ver a previsão, a confiança entre as classes e os exemplos de treino que produziram a resposta. Alcança **93,4%** em 2.000 dígitos escritos por outras pessoas e nunca vistos durante o treino.
+
+A parte interessante foi o diagnóstico: treinar apenas com o dataset clássico `digits` dava 98% no próprio conjunto de teste, mas 62,5% em caligrafia de outra origem. Nenhuma troca de modelo ou busca de hiperparâmetro fechou essa lacuna. Quem fechou foi acrescentar diversidade de escrita aos dados de treino, valendo +29 pontos. Feito com scikit-learn, NumPy e SciPy.
+
+**[Detector de Posição por Cor](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `visão computacional` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://deteccao-cor.streamlit.app/)
+Pipeline de visão computacional que localiza um objeto colorido numa imagem e classifica sua posição (esquerda, centro, direita) usando OpenCV clássico, sem aprendizado de máquina. Converte para HSV, isola a cor-alvo, encontra o maior contorno e seu centroide, e compara com o meio da imagem usando uma margem de tolerância. Interface Streamlit com captura de câmera pelo navegador, calibração manual de HSV por sliders e uma imagem sintética de fallback para testar sem webcam.
+
+**[Monitoramento Preditivo de Catenária](https://github.com/caiogadotti/monitoramento-catenaria)** &nbsp;·&nbsp; `sistemas distribuídos` &nbsp;·&nbsp; `go` &nbsp;·&nbsp; `python` &nbsp;·&nbsp; `público`
+Pipeline completo de manutenção preditiva para catenária ferroviária: gateway de ingestão concorrente em Go recebendo telemetria de milhares de sensores simulados, motor de análise em Python que estima dano por fadiga estrutural, persistência em Supabase e dashboard Streamlit. Domínio baseado em 6 meses na Systra fazendo desenhos técnicos e esquemas de controle de sistemas de catenária no Trem Intercidades de São Paulo (TIC). O gateway foi medido sob carga real, não estimado: **2.000 sensores simultâneos, zero falhas de conexão**, com uma ferramenta de teste de carga escrita para o projeto.
+
+O motor estima o desgaste de duas formas independentes, contagem de ciclos pelas regras de Basquin e Palmgren-Miner, e análise espectral por FFT do sinal de vibração. A parte interessante foi descobrir que o erro médio das duas, quase empatado em 0,002, escondia o único caso que importava: um sensor com dano real de **0,652**, a um passo do limiar crítico, era classificado como normal e não disparava alerta. A contagem de ciclos é cega para desgaste acelerado por construção, já que dois pontos com a mesma carga e o mesmo número de passagens produzem a mesma contagem mesmo se degradando em ritmos diferentes. O estimador espectral acertava esse caso (0,609), e a correção foi tirar o estado do maior dos dois e transformar a divergência entre eles em sinal de desgaste acelerado. Validado em 150 sensores: sinaliza exatamente os 2% defeituosos, sem falso positivo. Feito com Go, NumPy, Supabase e Streamlit.
+
+---
+
+## Contato
 
 - **LinkedIn:** [linkedin.com/in/caiogadotti](https://linkedin.com/in/caiogadotti)
-- **Email:** available on LinkedIn
-
+- **E-mail:** disponível no LinkedIn
