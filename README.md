@@ -82,6 +82,9 @@ Scripts e ferramentas para automatizar tarefas repetitivas de CAD: geração din
 
 > Rodam em sistemas internos da empresa, por isso seus repositórios são privados.
 
+**[PDF Compressor](https://github.com/caiogadotti/pdf-compressor)** &nbsp;·&nbsp; `ferramenta desktop` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [download](https://github.com/caiogadotti/pdf-compressor/releases/latest)
+App desktop para Windows que reduz o tamanho de PDFs escaneados recomprimindo as imagens embutidas: redimensiona pro máximo necessário pra leitura e recodifica em JPEG, em vez de só reempacotar o arquivo. Reduções de 80–99% mantendo legibilidade. Interface com drag-and-drop nativo e instalador pronto via Inno Setup. Feito com Python, PyMuPDF, Pillow e CustomTkinter.
+
 ---
 
 ## Projetos em Destaque &nbsp;·&nbsp; Graduação

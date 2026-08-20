@@ -82,6 +82,9 @@ Scripts and tools for automating repetitive CAD tasks: dynamic layout generation
 
 > These run on internal company systems, so their repositories are private.
 
+**[PDF Compressor](https://github.com/caiogadotti/pdf-compressor)** &nbsp;·&nbsp; `desktop tool` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [download](https://github.com/caiogadotti/pdf-compressor/releases/latest)
+Windows desktop app that shrinks scanned PDFs by recompressing their embedded images: downscales to the resolution actually needed for reading and re-encodes as JPEG, instead of just repackaging the file. Cuts 80–99% of the size while keeping text readable. Native drag-and-drop UI with a ready-to-run installer built via Inno Setup. Built with Python, PyMuPDF, Pillow and CustomTkinter.
+
 ---
 
 ## Featured Projects &nbsp;·&nbsp; Graduation
