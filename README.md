@@ -109,6 +109,11 @@ A parte interessante foi o diagnóstico: treinar apenas com o dataset clássico 
 **[Detector de Posição por Cor](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `visão computacional` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://deteccao-cor.streamlit.app/)
 Pipeline de visão computacional que localiza um objeto colorido numa imagem e classifica sua posição (esquerda, centro, direita) usando OpenCV clássico, sem aprendizado de máquina. Converte para HSV, isola a cor-alvo, encontra o maior contorno e seu centroide, e compara com o meio da imagem usando uma margem de tolerância. Interface Streamlit com captura de câmera pelo navegador, calibração manual de HSV por sliders e uma imagem sintética de fallback para testar sem webcam.
 
+**[Árvores de Decisão: Iris e Sensor de Triagem](https://github.com/caiogadotti/arvore-decisao-iris)** &nbsp;·&nbsp; `aprendizado de máquina` &nbsp;·&nbsp; `público`
+Duas entregas da Aula 3 do LCML no mesmo repositório. A primeira treina uma árvore de decisão pra classificar flores Iris em três espécies a partir de quatro medidas, mostrando cada pergunta que a árvore fez, nó por nó, até a resposta. A segunda é um dataset autoral meu: um sensor de esteira que separa papel, plástico e metal por peso, densidade, condutividade e opacidade, com uma interface de arrastar um item até o sensor e ver a classificação rodar na hora.
+
+A árvore do desafio autoral chega a **97,4%** no treino e **92,3%** no teste usando só duas leituras: condutividade separa metal do resto, opacidade separa papel de plástico. A zona de arrastar e soltar roda a mesma árvore duas vezes, uma em Python pra treinar, e a estrutura de nós serializada em JSON e reexecutada em JavaScript no navegador, pra classificar cada item solto no sensor sem round-trip com o servidor.
+
 ---
 
 ## Contato

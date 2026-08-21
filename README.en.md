@@ -109,6 +109,11 @@ The interesting part was the diagnosis: training only on the classic `digits` da
 **[Color-Based Position Detector](https://github.com/caiogadotti/deteccao-cor-cv)** &nbsp;·&nbsp; `computer vision` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://deteccao-cor.streamlit.app/)
 Computer vision pipeline that locates a colored object in an image and classifies its position (left, center, right) using classic OpenCV, no machine learning. Converts to HSV, thresholds the target color, finds the largest contour and its centroid, then compares it against the frame's midpoint with a tolerance band. Streamlit interface with live browser camera capture, manual HSV calibration sliders, and a synthetic fallback image for testing without a webcam.
 
+**[Decision Trees: Iris and Waste Sorting Sensor](https://github.com/caiogadotti/arvore-decisao-iris)** &nbsp;·&nbsp; `machine learning` &nbsp;·&nbsp; `public`
+Two deliverables from LCML's Lesson 3 in the same repository. The first trains a decision tree to classify Iris flowers into three species from four measurements, showing every question the tree asked, node by node, down to the answer. The second is an original dataset of mine: a sorting-belt sensor that separates paper, plastic, and metal by weight, density, conductivity, and opacity, with an interface to drag an item onto the sensor and watch the classification run live.
+
+The tree from the original challenge reaches **97.4%** on train and **92.3%** on test using just two readings: conductivity separates metal from the rest, opacity separates paper from plastic. The drag-and-drop zone runs the same tree twice, once in Python to train it, and once as its node structure serialized to JSON and replayed in JavaScript in the browser, classifying each dropped item with no server round-trip.
+
 ---
 
 ## Contact
