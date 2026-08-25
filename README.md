@@ -118,5 +118,5 @@ A árvore do desafio autoral chega a **97,4%** no treino e **92,3%** no teste us
 
 ## Contato
 
-- **LinkedIn:** [linkedin.com/in/caiogadotti](https://linkedin.com/in/caiogadotti)
+- **LinkedIn:** [linkedin.com/in/caiogadotti](https://www.linkedin.com/in/caio-gadotti-973673257/)
 - **E-mail:** disponível no LinkedIn
