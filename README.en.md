@@ -114,6 +114,11 @@ Two deliverables from LCML's Lesson 3 in the same repository. The first trains a
 
 The tree from the original challenge reaches **97.4%** on train and **92.3%** on test using just two readings: conductivity separates metal from the rest, opacity separates paper from plastic. The drag-and-drop zone runs the same tree twice, once in Python to train it, and once as its node structure serialized to JSON and replayed in JavaScript in the browser, classifying each dropped item with no server round-trip.
 
+**[Neural Network for Handwritten Digits](https://github.com/caiogadotti/reconhecimento-digitos-mlp)** &nbsp;·&nbsp; `machine learning` &nbsp;·&nbsp; `public`
+Neural network (MLP) trained on the same handwritten-digit dataset from Lesson 2, compared side by side with k-NN, with a Streamlit dashboard that reruns the whole pipeline: loss curve, confusion matrix, and the original challenge.
+
+I tested the model against five AI-generated handwritten digits, outside the training dataset's style. Accuracy dropped from 96% to 20%, and switching the crop method (fixed threshold to Otsu) didn't fix it: comparing pixel-intensity histograms, the original dataset comes almost binarized (stroke and background sharply defined), while the AI-generated photos have shadow and antialiasing the network never saw during training. Built with scikit-learn, scikit-image, and Streamlit.
+
 ---
 
 ## Contact

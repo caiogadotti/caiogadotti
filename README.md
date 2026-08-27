@@ -114,6 +114,11 @@ Duas entregas da Aula 3 do LCML no mesmo repositório. A primeira treina uma ár
 
 A árvore do desafio autoral chega a **97,4%** no treino e **92,3%** no teste usando só duas leituras: condutividade separa metal do resto, opacidade separa papel de plástico. A zona de arrastar e soltar roda a mesma árvore duas vezes, uma em Python pra treinar, e a estrutura de nós serializada em JSON e reexecutada em JavaScript no navegador, pra classificar cada item solto no sensor sem round-trip com o servidor.
 
+**[Rede Neural para Dígitos Manuscritos](https://github.com/caiogadotti/reconhecimento-digitos-mlp)** &nbsp;·&nbsp; `aprendizado de máquina` &nbsp;·&nbsp; `público`
+Rede neural (MLP) treinada no mesmo dataset de dígitos manuscritos da Aula 2, comparada lado a lado com o k-NN, com um dashboard Streamlit que reexecuta o pipeline completo: curva de perda, matriz de confusão e o desafio autoral.
+
+Testei o modelo contra cinco dígitos escritos à mão gerados por IA, fora do estilo do dataset de treino. A acurácia caiu de 96% pra 20%, e nem trocar o método de recorte (limiar fixo por Otsu) resolveu: comparando os histogramas de intensidade de pixel, o dataset original vem quase binarizado (traço e fundo bem definidos), enquanto as fotos geradas por IA têm sombra e antialiasing que a rede nunca viu no treino. Feito com scikit-learn, scikit-image e Streamlit.
+
 ---
 
 ## Contato
