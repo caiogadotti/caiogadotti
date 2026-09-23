@@ -99,7 +99,10 @@ Pra testar com número de verdade, usei o corte de rolo de tecido como domínio 
 
 ## Projetos em Destaque &nbsp;·&nbsp; Graduação
 
-Trabalhos do meu Laboratório de Aprendizado de Máquina (LCML), publicados como open source.
+Trabalhos da graduação em Engenharia de Sistemas Ciberfísicos, publicados como open source.
+
+**[Manutenção Preditiva com Probabilidade](https://github.com/caiogadotti/manutencao-preditiva-probabilidade)** &nbsp;·&nbsp; `probabilidade e estatística` &nbsp;·&nbsp; `público`
+Painel Streamlit que aplica probabilidade a um sistema ciberfísico de manutenção, com sensores de vibração e temperatura e alarmes que erram. Cada aba cobre uma parte da matéria (Bayes, Binomial, Poisson, Exponencial, Normal, distribuição conjunta e combinação de normais) e compara a fórmula com 100 mil simulações Monte Carlo. O resultado que mais chama atenção: com um sensor que acerta 95%, só **28%** dos alarmes são falha real. Feito com NumPy e SciPy.
 
 **[Reconhecedor de Dígitos Manuscritos](https://github.com/caiogadotti/reconhecimento-digitos-knn)** &nbsp;·&nbsp; `aprendizado de máquina` &nbsp;·&nbsp; `público` &nbsp;·&nbsp; [app online](https://reconhecimento-digitos-knn.streamlit.app/)
 Classificador de aprendizado de máquina que lê dígitos manuscritos a partir de imagens 8×8, com interface Streamlit para desenhar um número e ver a previsão, a confiança entre as classes e os exemplos de treino que produziram a resposta. Alcança **93,4%** em 2.000 dígitos escritos por outras pessoas e nunca vistos durante o treino.

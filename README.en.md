@@ -99,7 +99,10 @@ To test it with real numbers, I used fabric-roll cutting as the domain (based on
 
 ## Featured Projects &nbsp;·&nbsp; Graduation
 
-Coursework from my Machine Learning Lab (LCML), published as open source.
+Coursework from my Cyber-Physical Systems Engineering degree, published as open source.
+
+**[Predictive Maintenance with Probability](https://github.com/caiogadotti/manutencao-preditiva-probabilidade)** &nbsp;·&nbsp; `probability and statistics` &nbsp;·&nbsp; `public`
+Streamlit dashboard that applies probability to a cyber-physical maintenance system, with vibration and temperature sensors and alarms that can be wrong. Each tab covers one part of the course (Bayes, Binomial, Poisson, Exponential, Normal, joint distribution and combination of normals) and compares the formula with 100,000 Monte Carlo simulations. The standout result: with a sensor that is 95% accurate, only **28%** of alarms are real failures. Built with NumPy and SciPy.
 
 **[Handwritten Digit Recognizer](https://github.com/caiogadotti/reconhecimento-digitos-knn)** &nbsp;·&nbsp; `machine learning` &nbsp;·&nbsp; `public` &nbsp;·&nbsp; [live app](https://reconhecimento-digitos-knn.streamlit.app/)
 Machine learning classifier that reads handwritten digits from 8×8 images, with a Streamlit interface to draw a number and see the prediction, the confidence across classes, and the training examples that produced the answer. Reaches **93.4%** on 2,000 digits written by other people and never seen during training.
