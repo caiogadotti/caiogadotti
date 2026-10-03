@@ -107,6 +107,9 @@ An optimizer that decides when each factory load should run (oven, compressor, f
 
 Coursework from my Cyber-Physical Systems Engineering degree, published as open source.
 
+**[BMS for LiFePO4 Cells](https://github.com/caiogadotti/bms-lifepo4)** &nbsp;·&nbsp; `embedded systems` &nbsp;·&nbsp; `state estimation` &nbsp;·&nbsp; `public`
+A simulated battery management system for a four-cell LiFePO4 pack: a virtual battery with a 2RC equivalent circuit and Plett hysteresis, sensors with noise and offset, low-pass filters, debounced protection and an extended Kalman filter estimating each cell's state of charge. The original version was built in MATLAB/Simulink; this one reimplements the model in Python with an interactive dashboard. The key result: because the LFP curve is so flat, an estimator that ignores 18 mV of hysteresis goes from **0.4%** to **7.0%** SOC error, peaking at 13.6%. Built with NumPy, Streamlit and Plotly, with 14 tests.
+
 **[Predictive Maintenance with Probability](https://github.com/caiogadotti/manutencao-preditiva-probabilidade)** &nbsp;·&nbsp; `probability and statistics` &nbsp;·&nbsp; `public`
 Streamlit dashboard that applies probability to a cyber-physical maintenance system, with vibration and temperature sensors and alarms that can be wrong. Each tab covers one part of the course (Bayes, Binomial, Poisson, Exponential, Normal, joint distribution and combination of normals) and compares the formula with 100,000 Monte Carlo simulations. The standout result: with a sensor that is 95% accurate, only **28%** of alarms are real failures. Built with NumPy and SciPy.
 

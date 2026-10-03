@@ -107,6 +107,9 @@ Otimizador que decide em que horário ligar cada carga de uma fábrica (forno, c
 
 Trabalhos da graduação em Engenharia de Sistemas Ciberfísicos, publicados como open source.
 
+**[BMS para Células LiFePO4](https://github.com/caiogadotti/bms-lifepo4)** &nbsp;·&nbsp; `sistemas embarcados` &nbsp;·&nbsp; `estimação de estado` &nbsp;·&nbsp; `público`
+Simulação de um sistema de gerenciamento de bateria para um pack de quatro células LiFePO4: bateria virtual com circuito equivalente 2RC e histerese de Plett, sensores com ruído e offset, filtros passa-baixa, proteção com debounce e um filtro de Kalman estendido estimando o estado de carga de cada célula. A versão original foi feita em MATLAB/Simulink; esta reimplementa o modelo em Python com um painel interativo. O resultado central: como a curva do LFP é muito plana, um estimador que ignora os 18 mV de histerese passa de **0,4%** para **7,0%** de erro de SOC, com pico de 13,6%. Feito com NumPy, Streamlit e Plotly, com 14 testes.
+
 **[Manutenção Preditiva com Probabilidade](https://github.com/caiogadotti/manutencao-preditiva-probabilidade)** &nbsp;·&nbsp; `probabilidade e estatística` &nbsp;·&nbsp; `público`
 Painel Streamlit que aplica probabilidade a um sistema ciberfísico de manutenção, com sensores de vibração e temperatura e alarmes que erram. Cada aba cobre uma parte da matéria (Bayes, Binomial, Poisson, Exponencial, Normal, distribuição conjunta e combinação de normais) e compara a fórmula com 100 mil simulações Monte Carlo. O resultado que mais chama atenção: com um sensor que acerta 95%, só **28%** dos alarmes são falha real. Feito com NumPy e SciPy.
 
