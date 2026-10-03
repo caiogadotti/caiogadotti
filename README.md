@@ -95,17 +95,17 @@ Você desenha um lado de uma peça e o sistema sugere como ela provavelmente ter
 
 Pra testar com número de verdade, usei o corte de rolo de tecido como domínio (baseado no que vejo de corte de TNT na Descartee): comparei heurísticas de nesting com um validador estrito de sobreposição, e um achado contradisse a literatura clássica de bin packing. Minimizar a área enterrada sob cada peça, a heurística padrão, fragmentava o perfil e derrubava o aproveitamento de 89,6% pra até 68,3%; a regra mais simples de "menor topo resultante" venceu por manter poucos segmentos largos em vez de muitos degraus estreitos. Feito com Python, OpenCV e ezdxf.
 
+**[Linha de Produção · Digital Twin](https://github.com/caiogadotti/linha-producao-digital-twin)** &nbsp;·&nbsp; `simulação de eventos discretos` &nbsp;·&nbsp; `público`
+Simulador de uma linha de produção em série, peça por peça, com tempos de ciclo aleatórios, quebras de máquina e buffers limitados entre estações. Num painel Streamlit dá para editar a fábrica numa tabela e ver onde cada máquina gasta o tempo (trabalhando, quebrada, bloqueada, ociosa), testar onde comprar a próxima máquina e medir quanto a variabilidade custa: com a linha padrão, aumentar a variação do tempo de ciclo tira **14%** da produção, e **34%** sem buffers. O simulador foi validado contra as fórmulas das filas M/M/1 e M/M/c, com erro médio de 1,5%. Feito com SimPy, Plotly e pytest.
+
+**[Despacho de Energia da Fábrica](https://github.com/caiogadotti/despacho-energia-fabrica)** &nbsp;·&nbsp; `otimização e finanças` &nbsp;·&nbsp; `público`
+Otimizador que decide em que horário ligar cada carga de uma fábrica (forno, compressor, carregadores de empilhadeira), quando usar a bateria e quanto do solar consumir, com tarifa horo-sazonal e cobrança por pico de demanda. É um problema de programação linear inteira mista resolvido com HiGHS. Na fábrica de exemplo o custo do dia cai **36%** e o pico de demanda vai de 325 para 150 kW; só mudar os horários já entrega 69% disso, sem investimento. O painel ainda sorteia dias de sol por Monte Carlo para medir o valor de uma previsão perfeita e calcula VPL, TIR e o preço em que a bateria passa a se pagar. Validado contra força bruta. Feito com SciPy, Streamlit e Plotly.
+
 ---
 
 ## Projetos em Destaque &nbsp;·&nbsp; Graduação
 
 Trabalhos da graduação em Engenharia de Sistemas Ciberfísicos, publicados como open source.
-
-**[Despacho de Energia da Fábrica](https://github.com/caiogadotti/despacho-energia-fabrica)** &nbsp;·&nbsp; `otimização e finanças` &nbsp;·&nbsp; `público`
-Otimizador que decide em que horário ligar cada carga de uma fábrica (forno, compressor, carregadores de empilhadeira), quando usar a bateria e quanto do solar consumir, com tarifa horo-sazonal e cobrança por pico de demanda. É um problema de programação linear inteira mista resolvido com HiGHS. Na fábrica de exemplo o custo do dia cai **36%** e o pico de demanda vai de 325 para 150 kW; só mudar os horários já entrega 69% disso, sem investimento. O painel ainda sorteia dias de sol por Monte Carlo para medir o valor de uma previsão perfeita e calcula VPL, TIR e o preço em que a bateria passa a se pagar. Validado contra força bruta. Feito com SciPy, Streamlit e Plotly.
-
-**[Linha de Produção · Digital Twin](https://github.com/caiogadotti/linha-producao-digital-twin)** &nbsp;·&nbsp; `simulação de eventos discretos` &nbsp;·&nbsp; `público`
-Simulador de uma linha de produção em série, peça por peça, com tempos de ciclo aleatórios, quebras de máquina e buffers limitados entre estações. Num painel Streamlit dá para editar a fábrica numa tabela e ver onde cada máquina gasta o tempo (trabalhando, quebrada, bloqueada, ociosa), testar onde comprar a próxima máquina e medir quanto a variabilidade custa: com a linha padrão, aumentar a variação do tempo de ciclo tira **14%** da produção, e **34%** sem buffers. O simulador foi validado contra as fórmulas das filas M/M/1 e M/M/c, com erro médio de 1,5%. Feito com SimPy, Plotly e pytest.
 
 **[Manutenção Preditiva com Probabilidade](https://github.com/caiogadotti/manutencao-preditiva-probabilidade)** &nbsp;·&nbsp; `probabilidade e estatística` &nbsp;·&nbsp; `público`
 Painel Streamlit que aplica probabilidade a um sistema ciberfísico de manutenção, com sensores de vibração e temperatura e alarmes que erram. Cada aba cobre uma parte da matéria (Bayes, Binomial, Poisson, Exponencial, Normal, distribuição conjunta e combinação de normais) e compara a fórmula com 100 mil simulações Monte Carlo. O resultado que mais chama atenção: com um sensor que acerta 95%, só **28%** dos alarmes são falha real. Feito com NumPy e SciPy.
