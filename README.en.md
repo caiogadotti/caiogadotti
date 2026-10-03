@@ -101,6 +101,9 @@ To test it with real numbers, I used fabric-roll cutting as the domain (based on
 
 Coursework from my Cyber-Physical Systems Engineering degree, published as open source.
 
+**[Factory Energy Dispatch](https://github.com/caiogadotti/despacho-energia-fabrica)** &nbsp;·&nbsp; `optimization and finance` &nbsp;·&nbsp; `public`
+An optimizer that decides when each factory load should run (oven, compressor, forklift chargers), when to use the battery and how much solar to consume, under a time-of-use tariff with a peak demand charge. It is a mixed-integer linear program solved with HiGHS. On the sample factory the day's cost drops **36%** and peak demand goes from 325 to 150 kW; rescheduling alone delivers 69% of that, with no investment. The dashboard also samples sunny and cloudy days with Monte Carlo to measure the value of a perfect forecast, and computes NPV, IRR and the price at which the battery pays off. Validated against brute force. Built with SciPy, Streamlit and Plotly.
+
 **[Production Line · Digital Twin](https://github.com/caiogadotti/linha-producao-digital-twin)** &nbsp;·&nbsp; `discrete-event simulation` &nbsp;·&nbsp; `public`
 A part-by-part simulator of a serial production line with random cycle times, machine breakdowns and finite buffers between stations. The Streamlit dashboard lets you edit the factory in a table, see where each machine spends its time (working, broken, blocked, idle), test where the next machine should go and measure what variability costs: on the default line, raising cycle-time variation cuts output by **14%**, and by **34%** without buffers. The simulator is validated against the M/M/1 and M/M/c queueing formulas, with a 1.5% mean error. Built with SimPy, Plotly and pytest.
 
