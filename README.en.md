@@ -101,6 +101,9 @@ To test it with real numbers, I used fabric-roll cutting as the domain (based on
 
 Coursework from my Cyber-Physical Systems Engineering degree, published as open source.
 
+**[Production Line · Digital Twin](https://github.com/caiogadotti/linha-producao-digital-twin)** &nbsp;·&nbsp; `discrete-event simulation` &nbsp;·&nbsp; `public`
+A part-by-part simulator of a serial production line with random cycle times, machine breakdowns and finite buffers between stations. The Streamlit dashboard lets you edit the factory in a table, see where each machine spends its time (working, broken, blocked, idle), test where the next machine should go and measure what variability costs: on the default line, raising cycle-time variation cuts output by **14%**, and by **34%** without buffers. The simulator is validated against the M/M/1 and M/M/c queueing formulas, with a 1.5% mean error. Built with SimPy, Plotly and pytest.
+
 **[Predictive Maintenance with Probability](https://github.com/caiogadotti/manutencao-preditiva-probabilidade)** &nbsp;·&nbsp; `probability and statistics` &nbsp;·&nbsp; `public`
 Streamlit dashboard that applies probability to a cyber-physical maintenance system, with vibration and temperature sensors and alarms that can be wrong. Each tab covers one part of the course (Bayes, Binomial, Poisson, Exponential, Normal, joint distribution and combination of normals) and compares the formula with 100,000 Monte Carlo simulations. The standout result: with a sensor that is 95% accurate, only **28%** of alarms are real failures. Built with NumPy and SciPy.
 

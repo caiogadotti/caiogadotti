@@ -101,6 +101,9 @@ Pra testar com número de verdade, usei o corte de rolo de tecido como domínio 
 
 Trabalhos da graduação em Engenharia de Sistemas Ciberfísicos, publicados como open source.
 
+**[Linha de Produção · Digital Twin](https://github.com/caiogadotti/linha-producao-digital-twin)** &nbsp;·&nbsp; `simulação de eventos discretos` &nbsp;·&nbsp; `público`
+Simulador de uma linha de produção em série, peça por peça, com tempos de ciclo aleatórios, quebras de máquina e buffers limitados entre estações. Num painel Streamlit dá para editar a fábrica numa tabela e ver onde cada máquina gasta o tempo (trabalhando, quebrada, bloqueada, ociosa), testar onde comprar a próxima máquina e medir quanto a variabilidade custa: com a linha padrão, aumentar a variação do tempo de ciclo tira **14%** da produção, e **34%** sem buffers. O simulador foi validado contra as fórmulas das filas M/M/1 e M/M/c, com erro médio de 1,5%. Feito com SimPy, Plotly e pytest.
+
 **[Manutenção Preditiva com Probabilidade](https://github.com/caiogadotti/manutencao-preditiva-probabilidade)** &nbsp;·&nbsp; `probabilidade e estatística` &nbsp;·&nbsp; `público`
 Painel Streamlit que aplica probabilidade a um sistema ciberfísico de manutenção, com sensores de vibração e temperatura e alarmes que erram. Cada aba cobre uma parte da matéria (Bayes, Binomial, Poisson, Exponencial, Normal, distribuição conjunta e combinação de normais) e compara a fórmula com 100 mil simulações Monte Carlo. O resultado que mais chama atenção: com um sensor que acerta 95%, só **28%** dos alarmes são falha real. Feito com NumPy e SciPy.
 
