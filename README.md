@@ -24,6 +24,7 @@ Atualmente na Descartee, onde projeto e mantenho sistemas internos de controle o
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-B7410E?logo=rust&logoColor=white)
 ![VBA](https://img.shields.io/badge/VBA-867DB1)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
@@ -100,6 +101,9 @@ Simulador de uma linha de produção em série, peça por peça, com tempos de c
 
 **[Despacho de Energia da Fábrica](https://github.com/caiogadotti/despacho-energia-fabrica)** &nbsp;·&nbsp; `otimização e finanças` &nbsp;·&nbsp; `público`
 Otimizador que decide em que horário ligar cada carga de uma fábrica (forno, compressor, carregadores de empilhadeira), quando usar a bateria e quanto do solar consumir, com tarifa horo-sazonal e cobrança por pico de demanda. É um problema de programação linear inteira mista resolvido com HiGHS. Na fábrica de exemplo o custo do dia cai **36%** e o pico de demanda vai de 325 para 150 kW; só mudar os horários já entrega 69% disso, sem investimento. O painel ainda sorteia dias de sol por Monte Carlo para medir o valor de uma previsão perfeita e calcula VPL, TIR e o preço em que a bateria passa a se pagar. Validado contra força bruta. Feito com SciPy, Streamlit e Plotly.
+
+**[edgelog · Logger de Telemetria em Rust](https://github.com/caiogadotti/edge-logger-rust)** &nbsp;·&nbsp; `sistemas de baixo nível` &nbsp;·&nbsp; `rust` &nbsp;·&nbsp; `público`
+Logger de linha de comando para o computador do lado da máquina: recebe leituras de sensores (simulador, MQTT ou stdin) e grava num formato próprio que aguenta o PC desligar no meio da escrita. Toda leitura passa primeiro por um write-ahead log com CRC e fsync a cada 100 ms; ao religar, o log é cortado no último registro íntegro e o resto é aproveitado. Os blocos guardam cada sensor em colunas, com delta-of-delta no tempo, XOR no valor e zstd por cima. Medido num notebook: **5,3 milhões de leituras/s** com fsync ligado e arquivo **9,6x** menor que CSV. O teste que mais importa mata o processo três vezes no meio da gravação e confere 0 blocos corrompidos; outro corta o log em cada byte possível. Meu primeiro projeto em Rust, com CI em Linux e Windows.
 
 ---
 
